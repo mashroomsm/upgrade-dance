@@ -1,0 +1,823 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #1e1e2a;
+    background: #fefefe;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ========== ШАПКА ========== */
+.header {
+    background: #0b0b15;
+    color: white;
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #a81414dc;
+}
+
+.logo p {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+.nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #a81414dc;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* ========== ГЛАВНЫЙ ЭКРАН ========== */
+.hero {
+    background: linear-gradient(135deg, #11101f 0%, #2a2533 100%);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ========== КНОПКИ ========== */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #a81414dc;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #a81414dc;
+    transform: scale(1.02);
+}
+
+.btn-secondary {
+    background: #2a2533;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #3d3548;
+    transform: scale(1.02);
+}
+
+/* ========== ПРЕИМУЩЕСТВА ========== */
+.features {
+    padding: 60px 0;
+    background: #f8f9fc;
+}
+
+.features .container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ========== ПРОБНОЕ ЗАНЯТИЕ ========== */
+.trial {
+    background: #0b0b15;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.trial form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.trial input {
+    padding: 12px;
+    width: 250px;
+    border-radius: 40px;
+    border: none;
+}
+
+/* ========== СТРАНИЦЫ (ОБЩИЕ) ========== */
+.page-hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #2a2533 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ========== СЕТКИ ========== */
+.about-grid,
+.philosophy-grid,
+.teachers-grid,
+.directions-grid,
+.pricing-grid,
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+/* ========== О СТУДИИ ========== */
+.about-text {
+    padding: 1rem;
+}
+
+.about-image img,
+.teacher-photo img {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.philosophy-item,
+.teacher-card,
+.direction-card,
+.pricing-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 24px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.philosophy-item:hover,
+.teacher-card:hover,
+.direction-card:hover,
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+.philosophy-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.teacher-card h3,
+.direction-card h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.teacher-direction {
+    color: #a81414dc;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.direction-info {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #7d1313;
+    font-weight: 500;
+}
+
+.studio-features {
+    background: #f8f9fc;
+    padding: 3rem 0;
+    border-radius: 24px;
+    margin: 2rem 0;
+}
+
+.features-list {
+    max-width: 600px;
+    margin: 1.5rem auto;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.feature-check {
+    color: #a81414dc;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cta-center {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* ========== НАПРАВЛЕНИЯ ========== */
+.direction-help {
+    background-color: #8f0202;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-radius: 24px;
+    margin: 2rem 0;
+}
+
+.direction-help .btn-primary {
+    background: white;
+    color: #a81414dc;
+}
+
+.direction-help .btn-primary:hover {
+    background: #f0f0f0;
+}
+
+/* ========== ЦЕНЫ ========== */
+.pricing-card {
+    position: relative;
+}
+
+.pricing-card.popular {
+    border: 2px solid #a81414dc;
+    transform: scale(1.02);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #a81414dc;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e1e2a;
+    margin: 1rem 0;
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: #999;
+    margin-top: -0.5rem;
+}
+
+.pricing-card ul {
+    text-align: left;
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.pricing-card li {
+    margin: 0.5rem 0;
+}
+
+.special-offer {
+    background: linear-gradient(135deg, #a81414dc, #a81414dc);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 24px;
+    margin: 2rem 0;
+}
+
+.discount-info {
+    background: #f8f9fc;
+    padding: 1.5rem;
+    border-radius: 24px;
+    margin-top: 2rem;
+}
+
+.discount-info ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.discount-info li {
+    margin: 0.5rem 0;
+}
+
+/* ========== КОНТАКТЫ ========== */
+.contact-block {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+    font-size: 1.8rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    background: #1e1e2a;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    background: #a81414dc;
+    color: white;
+}
+
+.map-container {
+    margin: 1.5rem 0;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.transport-info {
+    background: #f8f9fc;
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-top: 1rem;
+}
+
+.contacts-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contacts-form input,
+.contacts-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contacts-form textarea {
+    resize: vertical;
+}
+
+/* ========== ГАЛЕРЕЯ ========== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.03);
+}
+
+/* ========== РАСПИСАНИЕ ========== */
+.schedule-wrapper {
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.schedule-table th {
+    background: #1e1e2a;
+    color: white;
+    font-weight: 600;
+}
+
+.schedule-table tr:hover {
+    background: #f8f9fc;
+}
+
+/* ========== СООБЩЕНИЯ ФОРМ ========== */
+#formMessage,
+#contactFormMessage {
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* ========== ПОДВАЛ ========== */
+footer {
+    background: #0b0b15;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #222;
+    margin-top: 3rem;
+}
+
+.socials a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: #a81414dc;
+}
+
+/* ========== АДАПТИВ ========== */
+@media (max-width: 1024px) {
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #0b0b15;
+        padding: 1rem;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .nav ul.show {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .page-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-grid,
+    .philosophy-grid,
+    .teachers-grid,
+    .directions-grid,
+    .pricing-grid,
+    .contacts-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contacts-form {
+        margin-top: 2rem;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ========== АНИМАЦИЯ БУРГЕРА ========== */
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+/* ========== МЕРЧ (ФУТБОЛКИ) ========== */
+
+/* Блок на странице О студии */
+.merch {
+    padding: 4rem 0;
+    background: #f8f9fc;
+}
+
+.merch-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.merch-image img {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.merch-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1e1e2a;
+}
+
+.merch-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #a81414dc;
+    margin: 1.5rem 0 1rem;
+}
+
+.merch-sizes {
+    margin: 1.5rem 0;
+}
+
+.size-list {
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem 0;
+}
+
+.size {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 2px solid #a81414dc;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #1e1e2a;
+}
+
+.size-note {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.merch-features {
+    margin: 1.5rem 0;
+}
+
+.merch-features p {
+    margin: 0.5rem 0;
+}
+
+.merch-note {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1rem;
+}
+
+/* Мерч на странице Цены */
+.merch-pricing {
+    margin: 3rem 0;
+}
+
+.merch-pricing-card {
+    max-width: 350px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 24px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: 2px solid #a81414dc;
+}
+
+.merch-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #a81414dc;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.merch-pricing-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+}
+
+.merch-pricing-sizes {
+    margin: 1rem 0;
+}
+
+.merch-pricing-sizes .size-list {
+    justify-content: center;
+}
+
+.merch-small {
+    font-size: 0.7rem;
+    color: #999;
+    margin-top: 1rem;
+}
+
+/* Адаптив для мерча */
+@media (max-width: 768px) {
+    .merch-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .size-list {
+        justify-content: center;
+    }
+    
+    .merch-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .merch-price {
+        font-size: 2rem;
+    }
+}
+/* ========== ФИЛЬТР РАСПИСАНИЯ ========== */
+.filter-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 24px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.filter-container h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #1e1e2a;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    border: 2px solid #a81414dc;
+    background: white;
+    color: #a81414dc;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    background: #a81414dc;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: #a81414dc;
+    color: white;
+}
+
+.hidden-row {
+    display: none !important;
+}

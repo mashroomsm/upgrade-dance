@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <meta name="description" content="Расписание занятий танцевальной студии UpGRADE. Дни, время, преподаватели и направления в Самаре.">
+    
+    <title>Расписание | UpGRADE | Танцевальная студия в Самаре</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <h1>UP<span>GRADE</span></h1>
+            <p>танцевальная студия</p>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О студии</a></li>
+                <li><a href="directions.html">Направления</a></li>
+                <li><a href="schedule.html" class="active">Расписание</a></li>
+                <li><a href="prices.html">Цены</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <h1>Расписание занятий</h1>
+            <p>Актуальное расписание студии UpGRADE</p>
+        </div>
+    </section>
+
+    <section class="schedule-section">
+    <div class="container">
+        <!-- Блок фильтра -->
+        <div class="filter-container">
+            <h3>Фильтр по направлениям:</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="Детские танцы">Детские</button>
+                <button class="filter-btn" data-filter="Классическая хореография">Классика</button>
+                <button class="filter-btn" data-filter="Лезгинка">Лезгинка</button>
+                <button class="filter-btn" data-filter="Растяжка">Растяжка</button>
+                <button class="filter-btn" data-filter="Эстрада">Эстрада</button>
+                <button class="filter-btn" data-filter="Contemporary">Contemporary</button>
+                <button class="filter-btn" data-filter="Jazz-Funk">Jazz-Funk</button>
+                <button class="filter-btn" data-filter="Break Dance">Break Dance</button>
+                <button class="filter-btn" data-filter="Hip-Hop Girly">Hip-Hop Girly</button>
+                <button class="filter-btn" data-filter="Hip-Hop">Hip-Hop</button>
+            </div>
+        </div>
+        
+        <!-- Таблица с расписанием -->
+        <div id="scheduleTable">
+            <div style="text-align: center; padding: 40px;">
+                <p>📅 Загрузка расписания...</p>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Танцевальная студия UpGRADE. Самара, ул. Лукачёва, 34</p>
+        <div class="socials">
+            <a href="#">VK</a> | <a href="#">Telegram</a> | <a href="#">YouTube</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

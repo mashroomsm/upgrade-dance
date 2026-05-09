@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <meta name="description" content="Фотогалерея танцевальной студии UpGRADE. Выступления, репетиции, мероприятия и атмосфера наших занятий в Самаре.">
+    
+    <title>Галерея | UpGRADE | Фото танцевальной студии</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="favicon.png">
+
+<!-- SEO -->
+<meta name="description" content="Танцевальная студия UpGRADE в Самаре. Современные направления, профессиональные преподаватели, пробное занятие 300₽.">
+<meta name="keywords" content="танцы, Самара, танцевальная студия, hip-hop, contemporary, k-pop, high heels">
+<meta name="author" content="UpGRADE Dance Studio">
+
+<!-- Open Graph (для соцсетей) -->
+<meta property="og:title" content="UpGRADE | Танцевальная студия">
+<meta property="og:description" content="Танцуй с нами! Пробное занятие — 300₽">
+<meta property="og:image" content="https://your-site.com/images/og-image.jpg">
+<meta property="og:type" content="website">
+<!-- Yandex Metrika -->
+<script>
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(XXXXXXXX, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true });
+</script>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <h1>UP<span>GRADE</span></h1>
+            <p>танцевальная студия</p>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О студии</a></li>
+                <li><a href="directions.html">Направления</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="prices.html">Цены</a></li>
+                <li><a href="gallery.html" class="active">Галерея</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <h1>Наша галерея</h1>
+            <p>Моменты с занятий, выступлений и мероприятий студии UpGRADE</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div id="galleryGrid">
+                <!-- Фотографии загружаются из data/gallery.json через JavaScript -->
+                <div style="text-align: center; padding: 40px;">
+                    <p>📸 Загрузка фотографий...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upload-info">
+        <div class="container">
+            <div style="background: #f8f9fc; padding: 2rem; border-radius: 24px; text-align: center; margin-top: 2rem;">
+                <h3>Хотите попасть в нашу галерею?</h3>
+                <p>Присылайте свои фото с занятий и выступлений администратору студии</p>
+                <a href="contacts.html" class="btn btn-primary" style="margin-top: 0.5rem;">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Танцевальная студия UpGRADE. Самара, ул. Лукачёва, 34</p>
+        <div class="socials">
+            <a href="#">VK</a> | <a href="#">Telegram</a> | <a href="#">YouTube</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
